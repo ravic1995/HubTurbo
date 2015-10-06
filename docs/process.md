@@ -43,3 +43,20 @@ Similar to above, except for following differences:
      * Format for the merge commit: `[issue number] issue title` e.g. `[324] Add keyboard shortcut for creating an issue`
      * Perform a non-fast-forward merge. `git merge --no-ff -m "merge commit message" your-branch-name` is one way to accomplish this.
      * Ensure all tests, including unstable ones, are passing before you push the merge commit to the repo.
+
+## Reviewers
+
+Things to check before a PR is ready to merge:
+
+- Branch and PR names follow conventions
+- "Fixes #x" in description
+- Documentation is updated
+- CI passes with no drop in coverage
+- No CheckStyle warnings (these don't cause the CI build to fail)
+- Unstable tests pass offline
+- Additions to linter exceptions and unstable tests should be carefully considered
+
+Things to look out for:
+
+- Ensure that appropriate abstractions are used, and intent is expressed clearly
+- Overall SLAP, with methods in the right places
