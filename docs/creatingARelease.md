@@ -45,6 +45,7 @@
 - Update version number in [build.gradle](../build.gradle)
 - Update version number in [`ui.UI`](../src/main/java/ui/UI.java)
 - Commit in the `VMAJOR.MINOR.PATCH` format
+- `git push`
 
 ### Create release candidate
 
